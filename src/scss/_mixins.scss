@@ -1,0 +1,103 @@
+/* text styles */
+@mixin large-title {
+    font-family: $font-family-rufina;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-148;
+}
+
+@mixin heading-one {
+    font-family: $font-family-rufina;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-108;
+}
+
+@mixin heading-two {
+    font-family: $font-family-rufina;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-88;
+}
+
+@mixin heading-three {
+    font-family: $font-family-rufina;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-68;
+}
+
+@mixin heading-four {
+    font-family: $font-family-rufina;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-48;
+}
+
+@mixin heading-five {
+    font-family: $font-family-rufina;
+    font-weight: $font-weight-bold;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-24;
+    }
+    
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-32;
+    }
+}
+
+@mixin heading-six {
+    font-family: $font-family-rufina;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-26;
+}
+
+@mixin widget-title {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-20;
+}
+
+@mixin widget-text {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-18;
+}
+
+@mixin nav-item {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-66;
+}
+
+@mixin body-text {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-24;
+}
+
+@mixin body-text-bold {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-24;
+}
+
+@mixin body-cap {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-20;
+}
+
+@mixin excerpt {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-22;
+}
+
+@mixin label {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-18;
+}
+
+@mixin widget-comment {
+    font-family: $font-family-lato;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-14;
+}

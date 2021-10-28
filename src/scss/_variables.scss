@@ -1,0 +1,42 @@
+/* font-family */
+$font-family-lato: 'Lato', sans-serif;
+$font-family-rufina: 'Rufina', serif;
+
+/* hover */
+$hover-transition: all .2s;
+
+/* font-size */
+$font-size-148: 14.8rem;
+$font-size-108: 10.8rem;
+$font-size-88: 8.8rem;
+$font-size-68: 6.8rem;
+$font-size-66: 6.6rem;
+$font-size-48: 4.8rem;
+$font-size-32: 3.2rem;
+$font-size-26: 2.6rem;
+$font-size-24: 2.4rem;
+$font-size-22: 2.2rem;
+$font-size-20: 2rem;
+$font-size-18: 1.8rem;
+$font-size-14: 1.4rem;
+
+/* font weight */
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+/* colors*/
+$color-very-dark-green: #233000;
+$color-dark-green: #5E6600;
+$color-green: #9CAA00;
+$color-light-green: #EBF0E4;
+$color-black: #000000;
+$color-dark-grey: #4D4D4D;
+$color-grey: #B0B0B0;
+$color-white: #FFFFFF;
+
+/* media queries */
+$media-query-mobile-large: 425px;
+$media-query-tablet: 786px;
+$media-query-laptop: 1024px;
+$media-query-laptop-large: 1440px;
+$media-query-desktop: 1660px;

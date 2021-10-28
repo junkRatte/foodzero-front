@@ -1,0 +1,46 @@
+@import './scss/variables';
+@import './scss/mixins';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#app {
+  width: 100%;
+  padding: 0 1rem;
+
+  @media only screen and (min-width: $media-query-tablet) {
+    padding: 0 3rem;
+  }
+
+  @media only screen and (min-width: $media-query-laptop) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and (min-width: $media-query-laptop-large) {
+    padding: 0 8rem;
+  }
+
+  @media only screen and (min-width: $media-query-desktop) {
+    width: 100%;
+    max-width: 1644px;
+    margin: 0 auto;
+    padding: 0 !important;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
