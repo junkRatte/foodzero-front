@@ -1,0 +1,113 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        padding-top: 2.5rem;
+    }
+
+    .nav-logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 50%;
+            max-width: 30rem;
+            margin-right: 1rem;
+
+            @media only screen and (min-width: $media-query-tablet) {
+                margin-right: 3rem;
+            }
+        }
+
+        .menu-icon {
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .menu-icon-span-one,
+            .menu-icon-span-two,
+            .menu-icon-span-three {
+                border-bottom: .2rem solid $color-white;
+                width: 2rem;
+                display: block;
+                transition: $hover-transition;
+
+                &:not(:last-child) {
+                    margin-bottom: .7rem;
+                }
+
+                @media only screen and (min-width: $media-query-mobile-large) {
+                    width: 2.5rem;
+                }
+
+                @media only screen and (min-width: $media-query-tablet) {
+                    width: 3rem;
+                    
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            color: $color-white;
+            @include heading-five;
+        }
+
+        .reservations-button {
+            padding: .5rem 1.5rem;
+            margin-left: 1rem;
+            border: .1rem solid $color-white;
+            transition: $hover-transition;
+
+            &:hover {
+                background-color: $color-white;
+                color: $color-very-dark-green;
+            }
+
+            @media only screen and (min-width: $media-query-tablet) {
+                padding: 1rem;
+                margin-left: 2rem;
+            }
+
+            @media only screen and (min-width: $media-query-laptop-large) {
+                padding: 2rem 4.5rem;
+                margin-left: 7rem;
+            }
+        }
+    }
+}
+
+.menu-icon-open {
+
+    .menu-icon-span-one {
+        transform: rotateZ(45deg);
+        position: absolute;
+        top: 50%;
+    }
+
+    .menu-icon-span-two {
+        opacity: 0;
+    }
+
+    .menu-icon-span-three {
+        transform: rotateZ(-45deg);
+        position: absolute;
+        top: 50%;
+    }
+}

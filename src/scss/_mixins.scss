@@ -51,19 +51,43 @@
 @mixin widget-title {
     font-family: $font-family-lato;
     font-weight: $font-weight-regular;
-    font-size: $font-size-20;
+    font-size: $font-size-14;
+    
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-18;
+    }
+
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-20;
+    }
 }
 
 @mixin widget-text {
     font-family: $font-family-lato;
     font-weight: $font-weight-regular;
-    font-size: $font-size-18;
+    font-size: $font-size-12;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-16;
+    }
+
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-18;
+    }
 }
 
 @mixin nav-item {
     font-family: $font-family-lato;
     font-weight: $font-weight-bold;
-    font-size: $font-size-66;
+    font-size: $font-size-32;
+    
+    @media only screen and (min-width: $media-query-laptop) {
+        font-size: $font-size-48;
+    }
+
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-66;
+    }
 }
 
 @mixin body-text {
