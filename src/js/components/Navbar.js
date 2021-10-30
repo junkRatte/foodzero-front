@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../images/Logo.svg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -7,6 +8,10 @@ function Navbar() {
   const toggleMenuClass = () => {
     setOpenMenu(!openMenu);
   };
+
+  const closeMenuNavLink = () => {
+    setOpenMenu(false);
+  }
 
   return (
     <nav>
@@ -32,21 +37,21 @@ function Navbar() {
         </div>
         <div className="menu-list">
           <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Menu</a>
-            </li>
-            <li>
-              <a href="#">Blogs</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <Link to="/" onClick={closeMenuNavLink}>
+              <li>Home</li>
+            </Link>
+            <Link to="/menu" onClick={closeMenuNavLink}>
+              <li>Menu</li>
+            </Link>
+            <Link to="/blogs" onClick={closeMenuNavLink}>
+              <li>Blogs</li>
+            </Link>
+            <Link to="/about" onClick={closeMenuNavLink}>
+              <li>About</li>
+            </Link>
+            <Link to="/contact" onClick={closeMenuNavLink}>
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
         <div className="menu-contact">
