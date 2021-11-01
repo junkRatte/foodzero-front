@@ -1,23 +1,29 @@
 import React, { useState } from "react";
 import Logo from "../../images/Logo.svg";
 import { Link } from "react-router-dom";
+import disableScroll from "disable-scroll";
 
 function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [isScrollDisabled, setIsScrollDisabled] = useState(false);
 
-  const toggleMenuClass = () => {
+  const toggleMenu = () => {
     setOpenMenu(!openMenu);
+
+    disableScroll[isScrollDisabled ? "off" : "on"]();
+    setIsScrollDisabled(!isScrollDisabled);
   };
 
   const closeMenuNavLink = () => {
     setOpenMenu(false);
-  }
+    disableScroll[isScrollDisabled ? "off" : "on"]();
+  };
 
   return (
-    <nav>
+    <nav className="layout-container">
       <div className="nav-logo">
         <img src={Logo} />
-        <div className="menu-icon" onClick={toggleMenuClass}>
+        <div className="menu-icon" onClick={toggleMenu}>
           <span className="menu-icon-span-one"></span>
           <span className="menu-icon-span-two"></span>
           <span className="menu-icon-span-three"></span>
@@ -30,7 +36,7 @@ function Navbar() {
         </a>
       </div>
       <div className={`menu ${openMenu ? "open-menu" : "close-menu"}`}>
-        <div className="menu-icon-open menu-icon-two" onClick={toggleMenuClass}>
+        <div className="menu-icon-open menu-icon-two" onClick={toggleMenu}>
           <span className="menu-icon-span-one"></span>
           <span className="menu-icon-span-two"></span>
           <span className="menu-icon-span-three"></span>

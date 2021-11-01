@@ -4,6 +4,9 @@
 @import './scss/components/navbar';
 @import './scss/components/menu';
 
+@import './scss/pages/homepageHeader';
+@import './scss/pages/homepageMenu';
+
 *,
 *::before,
 *::after {
@@ -14,10 +17,6 @@
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  background-color: $color-very-dark-green;
 }
 
 .layout-container {

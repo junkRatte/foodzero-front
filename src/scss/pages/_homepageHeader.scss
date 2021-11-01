@@ -1,0 +1,172 @@
+.homepage-header {
+    color: $color-white;
+    background-color: $color-very-dark-green;
+    padding-bottom: 10rem;
+
+    header {
+        position: relative;
+        padding-top: 10rem;
+
+        .homepage-text {
+            position: relative;
+            z-index: 2;
+
+            h1 {
+                @include large-title;
+                margin-bottom: 2rem;
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    margin-bottom: 5rem;
+                }
+            }
+
+            p {
+                @include body-text;
+            }
+
+            h4 {
+                @include heading-four;
+                display: flex;
+                width: 100%;
+                transform: rotate(90deg);
+                transform-origin: bottom left;
+
+                &::after {
+                    content: '';
+                    border-bottom: .2rem dashed $color-white;
+                    width: 15rem;
+                    margin-left: 1rem;
+                    align-self: center;
+
+                    @media only screen and (min-width: $media-query-tablet) {
+                        width: 25rem;
+                        margin-left: 2rem;
+                    }
+
+                    @media only screen and (min-width: $media-query-laptop-large) {
+                        width: 40rem;
+                    }
+                }
+            }
+        }
+
+        .homepage-images {
+
+            img.main-image {
+                display: block;
+                width: 50%;
+                position: absolute;
+                right: 0;
+                z-index: 1 !important;
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    width: 40%;
+                    bottom: -40%;
+                    z-index: -1;
+                }
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    width: 50%;
+                    right: 0;
+                    bottom: -100%;
+                }
+
+                @media only screen and (min-width: $media-query-desktop) {
+                    width: 50%;
+                    right: 0;
+                    bottom: -65%;
+                }
+            }
+
+            img.spices-image {
+                display: none;
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    display: block;
+                    width: 40%;
+                    position: absolute;
+                    right: 20%;
+                    bottom: -45%;
+                    z-index: 1;
+                }
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    width: 50%;
+                    bottom: -110%;
+                }
+
+                @media only screen and (min-width: $media-query-desktop) {
+                    width: 50%;
+                    bottom: -70%;
+                }
+            }
+        }
+    }
+
+    .homepage-diet {
+        padding-top: 30rem;
+        text-align: center;
+
+        @media only screen and (min-width: $media-query-mobile-large) {
+            padding-top: 50rem;
+        }
+
+        @media only screen and (min-width: $media-query-tablet) {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            padding-top: 70rem;
+        }
+
+        &-left {
+            margin-bottom: 5rem;
+
+            h3 {
+                @include heading-three;
+                margin-bottom: 2rem;
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    margin-bottom: 5rem;
+                }
+            }
+
+            p {
+                @include body-text;
+            }
+
+            img {
+                margin-bottom: 2rem;
+                width: 50%;
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    width: 80%;
+                    margin-bottom: 5rem;
+                }
+
+                @media only screen and (min-width: $media-query-desktop) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-right {
+
+            p {
+                @include body-text;
+                margin-bottom: 2rem;
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    margin-bottom: 7rem;
+                }
+            }
+
+            img {
+                width: 50%;
+
+                @media only screen and (min-width: $media-query-laptop-large) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,24 @@
 @mixin large-title {
     font-family: $font-family-rufina;
     font-weight: $font-weight-bold;
-    font-size: $font-size-148;
+    line-height: 110%;
+    font-size: $font-size-32;
+    
+    @media only screen and (min-width: $media-query-mobile-large) {
+        font-size: $font-size-48;
+    }
+
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-66;
+    }
+
+    @media only screen and (min-width: $media-query-laptop) {
+        font-size: $font-size-88;
+    }
+
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-148;
+    }
 }
 
 @mixin heading-one {
@@ -20,13 +37,37 @@
 @mixin heading-three {
     font-family: $font-family-rufina;
     font-weight: $font-weight-bold;
-    font-size: $font-size-68;
+    font-size: $font-size-16;
+
+    @media only screen and (min-width: $media-query-mobile-large) {
+        font-size: $font-size-24;
+    }
+
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-48;
+    }
+    
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-68;
+    }
 }
 
 @mixin heading-four {
     font-family: $font-family-rufina;
     font-weight: $font-weight-bold;
-    font-size: $font-size-48;
+    font-size: $font-size-16;
+
+    @media only screen and (min-width: $media-query-mobile-large) {
+        font-size: $font-size-24;
+    }
+
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-32;
+    }
+
+    @media only screen and (min-width: $media-query-laptop-large) {
+        font-size: $font-size-48;
+    }
 }
 
 @mixin heading-five {
@@ -93,7 +134,23 @@
 @mixin body-text {
     font-family: $font-family-lato;
     font-weight: $font-weight-regular;
-    font-size: $font-size-24;
+    line-height: 140%;
+    
+    @media only screen and (min-width: $media-query-mobile-large) {
+        font-size: $font-size-14;
+    }
+
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-18;
+    }
+
+    @media only screen and (min-width: $media-query-laptop) {
+        font-size: $font-size-20;
+    }
+    
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-24;
+    }
 }
 
 @mixin body-text-bold {
