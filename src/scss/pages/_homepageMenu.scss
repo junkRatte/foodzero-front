@@ -1,0 +1,78 @@
+.homepage-menu {
+    position: relative;
+    padding-top: 5rem;
+    height: 200vh;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        padding-top: 10rem;
+    }
+
+    @media only screen and (min-width: $media-query-laptop-large) {
+        padding-top: 17rem;
+    }
+
+    &-title {
+        margin-bottom: 5rem;
+
+        @media only screen and (min-width: $media-query-laptop) {
+            margin-bottom: 15rem;
+        }
+
+        h2 {
+            @include heading-one;
+        }
+
+        p {
+            @include body-text;
+            color: $color-dark-grey;
+        }
+    }
+
+    &-grid {
+        @media only screen and (min-width: $media-query-laptop) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+        }
+
+        .menu-item {
+            margin-bottom: 2rem;
+            
+            @media only screen and (min-width: $media-query-laptop) {
+                padding: 2rem;
+                transition: $hover-transition;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $color-light-grey;
+                    border-radius: 1rem;
+                }
+            }
+
+            &-price {
+                @include heading-four;
+                margin-bottom: 1rem;
+                text-align: right;
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &-name {
+                @include heading-three;
+                border-top: .3rem dotted $color-black;
+                padding-top: 1rem;
+                margin-bottom: 1rem;
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &-summary {
+                @include body-text;
+            }
+        }
+    }
+}
