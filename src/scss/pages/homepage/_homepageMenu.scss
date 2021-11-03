@@ -1,14 +1,28 @@
 .homepage-menu {
     position: relative;
     padding-top: 5rem;
-    height: 200vh;
+    padding-bottom: 5rem;
 
     @media only screen and (min-width: $media-query-tablet) {
         padding-top: 10rem;
+        padding-bottom: 15rem;
     }
 
     @media only screen and (min-width: $media-query-laptop-large) {
         padding-top: 17rem;
+        padding-bottom: 20rem;
+    }
+
+    img.bg-image {
+        display: none;
+
+        @media only screen and (min-width: $media-query-laptop) {
+            display: block;
+            width: 45%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 
     &-title {

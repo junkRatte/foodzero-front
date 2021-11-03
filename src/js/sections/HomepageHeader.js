@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 
 function Homepage() {
   return (
-    <div className="homepage-header">
+    <section className="homepage-header">
       <Navbar />
       <header className="layout-container">
         <div className="homepage-text">
@@ -53,7 +53,7 @@ function Homepage() {
           <img src={DietSpicesImage} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

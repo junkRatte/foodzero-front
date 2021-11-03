@@ -1,0 +1,65 @@
+.homepage-cook {
+    background-color: $color-light-green;
+    padding-top: 5rem;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        padding-top: 10rem;
+    }
+
+    &-wrapper {
+        @media only screen and (min-width: $media-query-tablet) {
+            display: flex;
+        }
+    }
+
+    &-image {
+        position: relative;
+        z-index: 1;
+
+        @media only screen and (min-width: $media-query-tablet) {
+            width: 60%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .leaf-img {
+            position: absolute;
+            z-index: -1;
+            width: 30%;
+            transform: rotateY(180deg);
+        }
+
+        .cook-img {
+            @media only screen and (min-width: $media-query-desktop) {
+                margin-bottom: -4rem;
+            }
+        }
+    }
+
+    &-text {
+        @media only screen and (min-width: $media-query-tablet) {
+            width: 40%;
+        }
+
+        h2 {
+            @include heading-one;
+            margin-bottom: 1rem
+        }
+
+        p {
+            @include body-text;
+            margin-bottom: 4rem;
+        }
+
+        img {
+            width: 50%;
+
+            @media only screen and (min-width: $media-query-tablet) {
+                width: 80%;
+                float: right;
+            }
+        }
+    }
+}

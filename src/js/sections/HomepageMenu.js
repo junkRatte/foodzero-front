@@ -1,9 +1,11 @@
 import React from "react";
 import { MenuData } from "../components/MenuData";
+import BackgroundImg from "../../images/menu-bg-image.png";
 
 function HomepageMenu() {
   return (
-    <div className="homepage-menu">
+    <section className="homepage-menu">
+      <img className="bg-image" src={BackgroundImg}/>
       <div className="layout-container">
         <div className="homepage-menu-title">
           <h2>Our Menu</h2>
@@ -19,7 +21,7 @@ function HomepageMenu() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

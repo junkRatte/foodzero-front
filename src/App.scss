@@ -4,8 +4,9 @@
 @import './scss/components/navbar';
 @import './scss/components/menu';
 
-@import './scss/pages/homepageHeader';
-@import './scss/pages/homepageMenu';
+@import './scss/pages/homepage/homepageHeader';
+@import './scss/pages/homepage/homepageMenu';
+@import './scss/pages/homepage/homepageCook';
 
 *,
 *::before,
