@@ -102,7 +102,19 @@
 @mixin heading-six {
     font-family: $font-family-rufina;
     font-weight: $font-weight-bold;
-    font-size: $font-size-26;
+    font-size: $font-size-12;
+
+    @media only screen and (min-width: $media-query-mobile-large) {
+        font-size: $font-size-14;
+    }
+
+    @media only screen and (min-width: $media-query-laptop) {
+        font-size: $font-size-18;
+    }
+
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-26;
+    }
 }
 
 @mixin widget-title {
@@ -184,13 +196,33 @@
 @mixin excerpt {
     font-family: $font-family-lato;
     font-weight: $font-weight-regular;
-    font-size: $font-size-22;
+    font-size: $font-size-12;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-16;
+    }
+    
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-22;
+    }
 }
 
 @mixin label {
     font-family: $font-family-lato;
     font-weight: $font-weight-regular;
-    font-size: $font-size-18;
+    font-size: $font-size-9;
+
+    @media only screen and (min-width: $media-query-mobile-large) {
+        font-size: $font-size-12;
+    }
+
+    @media only screen and (min-width: $media-query-laptop) {
+        font-size: $font-size-16;
+    }
+    
+    @media only screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-18;
+    }
 }
 
 @mixin widget-comment {

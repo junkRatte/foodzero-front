@@ -16,7 +16,7 @@ function HomepageMenu() {
             <div className="menu-item">
               <p className="menu-item-price">${meal.price}</p>
               <h3 className="menu-item-name">{meal.name}</h3>
-              <p className="menu-item-summary">{meal.summary}</p>
+              <p className="menu-item-summary">{meal.teaser}</p>
             </div>
           ))}
         </div>
