@@ -1,0 +1,52 @@
+.homepage-features {
+    padding: 8rem 0;
+
+    @media only screen and (min-width: $media-query-tablet) {
+        padding: 20rem 0;
+    }
+
+    .features-items {
+        text-align: center;
+
+        @media only screen and (min-width: $media-query-laptop) {
+            display: flex;
+            gap: 3rem;
+        }
+
+        @media only screen and (min-width: $media-query-desktop) {
+            gap: 6rem;
+        }
+
+        &-item {
+            margin-bottom: 4rem;
+
+            @media only screen and (min-width: $media-query-laptop) {
+                margin-bottom: 0;
+            }
+
+            .item-icon {
+                border-radius: 50%;
+                background-color: $color-light-green;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                width: 30%;
+
+                @media only screen and (min-width: $media-query-laptop) {
+                    width: initial;
+                }
+            }
+
+            .item-title {
+                @include heading-four;
+                
+                @media only screen and (min-width: $media-query-laptop) {
+                    margin-bottom: 4rem;
+                }
+            }
+
+            .item-text {
+                @include body-text;
+            }
+        }
+    }
+}

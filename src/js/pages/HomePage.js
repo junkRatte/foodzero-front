@@ -1,7 +1,8 @@
 import React from "react";
-import HomepageCook from "../sections/HomepageCook";
-import HomepageHeader from "../sections/HomepageHeader";
-import HomepageMenu from "../sections/HomepageMenu";
+import HomepageHeader from "../sections/homepage/HomepageHeader";
+import HomepageMenu from "../sections/homepage/HomepageMenu";
+import HomepageCook from "../sections/homepage/HomepageCook";
+import HomepageFeatures from "../sections/homepage/HomepageFeatures";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <HomepageHeader />
       <HomepageMenu />
       <HomepageCook />
+      <HomepageFeatures />
     </div>
   );
 }

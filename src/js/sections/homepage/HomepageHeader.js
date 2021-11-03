@@ -1,9 +1,9 @@
 import React from "react";
-import HomepageImage from "../../images/homepage-image.png";
-import SpicesImage from "../../images/spices-image.png";
-import DietImage from "../../images/diet-image.png";
-import DietSpicesImage from "../../images/diet-spices-image.png";
-import Navbar from "../components/Navbar";
+import HomepageImage from "../../../images/homepage-image.png";
+import SpicesImage from "../../../images/spices-image.png";
+import DietImage from "../../../images/diet-image.png";
+import DietSpicesImage from "../../../images/diet-spices-image.png";
+import Navbar from "../../components/Navbar";
 
 function Homepage() {
   return (

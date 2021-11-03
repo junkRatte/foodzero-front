@@ -1,6 +1,7 @@
 .homepage-cook {
     background-color: $color-light-green;
     padding-top: 5rem;
+    padding-bottom: 2rem;
 
     @media only screen and (min-width: $media-query-tablet) {
         padding-top: 10rem;
@@ -33,7 +34,7 @@
 
         .cook-img {
             @media only screen and (min-width: $media-query-desktop) {
-                margin-bottom: -4rem;
+                margin-bottom: -6rem;
             }
         }
     }

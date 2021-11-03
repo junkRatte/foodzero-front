@@ -1,6 +1,6 @@
 import React from "react";
-import CookImage from "../../images/cook-image.png";
-import Leaf from "../../images/Leaf.png";
+import CookImage from "../../../images/cook-image.png";
+import Leaf from "../../../images/Leaf.png";
 
 function HomepageCook() {
   return (

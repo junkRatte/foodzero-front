@@ -1,6 +1,6 @@
 import React from "react";
-import { MenuData } from "../components/MenuData";
-import BackgroundImg from "../../images/menu-bg-image.png";
+import { MenuData } from "../../components/MenuData";
+import BackgroundImg from "../../../images/menu-bg-image.png";
 
 function HomepageMenu() {
   return (
