@@ -96,6 +96,15 @@
             a {
                 @include body-text;
                 color: $color-black;
+                transition: $hover-transition;
+
+                &:hover {
+                    color: $color-green;
+
+                    i {
+                        color: $color-green;
+                    }
+                }
 
                 i {
                     vertical-align: middle;

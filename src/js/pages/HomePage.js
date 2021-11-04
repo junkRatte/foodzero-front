@@ -4,6 +4,7 @@ import HomepageMenu from "../sections/homepage/HomepageMenu";
 import HomepageCook from "../sections/homepage/HomepageCook";
 import HomepageFeatures from "../sections/homepage/HomepageFeatures";
 import HomepageBlog from "../sections/homepage/HomepageBlog";
+import ReservationForm from "../components/ReservationForm";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <HomepageCook />
       <HomepageFeatures />
       <HomepageBlog />
+      <ReservationForm />
     </div>
   );
 }
