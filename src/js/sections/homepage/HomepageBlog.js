@@ -23,7 +23,7 @@ function HomepageBlog() {
               <h3 className="blog-card-title">{blog.title}</h3>
               <p className="blog-card-teaser">{blog.teaser}</p>
               <a href="#">
-                Read More<i class="fas fa-long-arrow-alt-right"></i>
+                Read More <i class="fas fa-long-arrow-alt-right"></i>
               </a>
             </div>
           </article>
