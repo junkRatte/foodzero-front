@@ -5,6 +5,7 @@ import Menu from "./js/pages/MenuPage";
 import Blogs from "./js/pages/BlogsPage";
 import About from "./js/pages/AboutPage";
 import Contact from "./js/pages/ContactPage";
+import Footer from "./js/components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
