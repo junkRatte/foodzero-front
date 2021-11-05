@@ -25,7 +25,7 @@
 @mixin heading-one {
     font-family: $font-family-rufina;
     font-weight: $font-weight-bold;
-    font-size: $font-size-24;
+    font-size: $font-size-32;
 
     @media only screen and (min-width: $media-query-mobile-large) {
         font-size: $font-size-48;
@@ -89,7 +89,7 @@
 @mixin heading-five {
     font-family: $font-family-rufina;
     font-weight: $font-weight-bold;
-    font-size: $font-size-12;
+    font-size: $font-size-14;
 
     @media only screen and (min-width: $media-query-tablet) {
         font-size: $font-size-24;

@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import ReservationForm from "../components/ReservationForm";
+import MenupageHeader from "../sections/menupage/MenupageHeader";
 
 function Menu() {
-    return (
-        <div>
-            <h1>menupage</h1>
-        </div>
-    )
+  return (
+    <div className="menupage">
+      <MenupageHeader />
+      <ReservationForm />
+    </div>
+  );
 }
 
-export default Menu
+export default Menu;
