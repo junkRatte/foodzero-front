@@ -6,6 +6,7 @@ import Blogs from "./js/pages/BlogsPage";
 import About from "./js/pages/AboutPage";
 import Contact from "./js/pages/ContactPage";
 import Footer from "./js/components/Footer";
+import ScrollToTopButton from "./js/components/ScrollToTopButton";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
+        <ScrollToTopButton />
         <Footer />
       </div>
     </Router>

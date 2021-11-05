@@ -1,0 +1,25 @@
+.scroll-button {
+    position: fixed;
+    z-index: 3;
+    right: 1rem;
+    bottom: 1rem;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-green;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+
+    @media only screen and (min-width: $media-query-laptop) {
+        right: 2.5rem;
+        padding: 1rem 2rem;
+    }
+
+    i {
+        font-size: 3rem;
+        color: $color-white;
+
+        @media only screen and (min-width: $media-query-laptop) {
+            font-size: 5rem;
+        }
+    }
+}
