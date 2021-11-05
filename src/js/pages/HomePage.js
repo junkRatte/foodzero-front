@@ -6,6 +6,7 @@ import HomepageFeatures from "../sections/homepage/HomepageFeatures";
 import HomepageBlog from "../sections/homepage/HomepageBlog";
 import ReservationForm from "../components/ReservationForm";
 import HomepageCategories from "../sections/homepage/HomepageCategories";
+import HomepageQuotes from "../sections/homepage/HomepageQuotes";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <HomepageBlog />
       <ReservationForm />
       <HomepageCategories />
+      <HomepageQuotes />
     </div>
   );
 }
