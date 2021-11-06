@@ -1,9 +1,12 @@
 import React from 'react'
+import ReservationForm from '../components/ReservationForm'
+import ContactpageHeader from '../sections/contact/ContactpageHeader'
 
 function Contact() {
     return (
-        <div>
-            <h1>contact page</h1>
+        <div className="contactpage">
+            <ContactpageHeader />
+            <ReservationForm />
         </div>
     )
 }
