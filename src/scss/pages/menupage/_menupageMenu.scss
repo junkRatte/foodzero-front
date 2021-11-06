@@ -1,0 +1,91 @@
+.menupage-menu {
+
+    &-title {
+      width: 100%;
+      position: relative;
+      text-align: center;
+      padding-top: 12rem;
+      padding-bottom: 18rem;
+
+      h2 {
+        @include heading-one;
+      }
+
+      p {
+        @include body-text;
+      }
+
+      img.blueberry-img {
+        display: none;
+
+        @media only screen and (min-width: $media-query-laptop) {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0rem;
+          max-width: 50rem;
+        }
+      }
+
+      img.avocado-img {
+        display: none;
+
+        @media only screen and (min-width: $media-query-laptop) {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 45%;
+          transform: translateX(45%);
+          max-width: 38rem;
+        }
+      }
+    }
+
+    &-wrapper {
+      margin-bottom: 20rem;
+
+      @media only screen and (min-width: $media-query-laptop) {
+        display: flex;
+        gap: 10rem;
+      }
+
+      img {
+        display: none;
+
+        @media only screen and (min-width: $media-query-laptop) {
+          display: block;
+          max-width: 79rem;
+          width: 50%;
+        }
+      }
+
+      .menu-item {
+        margin-bottom: 6rem;
+        transition: $hover-transition;
+        padding: 1rem;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $color-light-grey;
+          border-radius: 1rem;
+        }
+
+        &-price {
+          @include heading-four;
+          text-align: right;
+          margin-bottom: 2rem;
+        }
+
+        &-name {
+          @include heading-three;
+          border-top: 0.3rem dotted $color-black;
+          padding-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        &-teaser {
+          @include body-text;
+        }
+      }
+    }
+}

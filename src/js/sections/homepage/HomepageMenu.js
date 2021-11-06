@@ -12,7 +12,7 @@ function HomepageMenu() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div className="homepage-menu-grid">
-          {MenuData.map(meal => (
+          {MenuData.slice(0, 4).map(meal => (
             <div className="menu-item">
               <p className="menu-item-price">${meal.price}</p>
               <h3 className="menu-item-name">{meal.name}</h3>
