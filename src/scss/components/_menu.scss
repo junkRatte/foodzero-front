@@ -83,9 +83,11 @@
             list-style: disc;
             color: $color-white;
             margin-bottom: 2.5rem;
+            line-height: 6rem;
 
-            li:not(:last-child) {
-                margin-bottom: 2.5rem;
+            @media only screen and (min-width: $media-query-laptop) {
+                margin-bottom: 0;
+                line-height: 10rem;
             }
         }
     }
