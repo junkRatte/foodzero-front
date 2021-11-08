@@ -1,0 +1,159 @@
+.aboutpage-story {
+  height: 100%;
+  padding: 10rem 0;
+
+  @media only screen and (min-width: $media-query-laptop) {
+    padding: 20rem 0;
+  }
+
+  .our-story {
+    margin-bottom: 5rem;
+    position: relative;
+
+    @media only screen and (min-width: $media-query-tablet) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 30rem;
+    }
+
+    .tomato-image {
+      display: none;
+      position: absolute;
+      top: -18%;
+      left: 41%;
+      transform: translateX(-41%);
+      z-index: -1;
+
+      @media only screen and (min-width: $media-query-laptop) {
+        display: block;
+      }
+    }
+
+    &-title {
+      margin-bottom: 4rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        margin-bottom: 8rem;
+      }
+
+      h2 {
+        @include heading-one;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        @include body-text;
+      }
+    }
+
+    &-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .management {
+    &-manager {
+      margin-bottom: 5rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        display: flex;
+        column-gap: 10rem;
+      }
+
+      @media only screen and (min-width: $media-query-desktop) {
+        margin-bottom: -40rem;
+        column-gap: 20rem;
+      }
+
+      &-image {
+        h3 {
+          @include heading-three;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          @include body-text;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        img {
+          width: 100%;
+          max-width: 72rem;
+          max-height: 86rem;
+          margin-bottom: 2rem;
+
+          @media only screen and (min-width: $media-query-tablet) {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-text {
+        pre {
+          @include body-text;
+
+          @media only screen and (min-width: $media-query-tablet) {
+            margin-top: 15rem;
+          }
+        }
+      }
+    }
+
+    &-chef {
+      @media only screen and (min-width: $media-query-tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        column-gap: 10rem;
+      }
+
+      @media only screen and (min-width: $media-query-desktop) {
+        column-gap: 20rem;
+      }
+
+      &-image {
+        h3 {
+          @include heading-three;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          @include body-text;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        img {
+          width: 100%;
+          max-width: 72rem;
+          max-height: 86rem;
+          margin-bottom: 2rem;
+
+          @media only screen and (min-width: $media-query-tablet) {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-text {
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: $media-query-tablet) {
+          margin-bottom: 0;
+        }
+
+        pre {
+          @include body-text;
+          white-space: pre-wrap;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
