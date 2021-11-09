@@ -1,0 +1,141 @@
+.aboutpage-process {
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  position: relative;
+
+  @media only screen and (min-width: $media-query-tablet) {
+    padding-top: 25rem;
+    padding-bottom: 30rem;
+  }
+
+  .rosemary-image {
+    display: none;
+
+    @media only screen and (min-width: $media-query-laptop) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &-title {
+    @include heading-one;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @media only screen and (min-width: $media-query-tablet) {
+      margin-bottom: 15rem;
+    }
+  }
+
+  &-steps {
+    .step-one {
+      margin-bottom: 5rem;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        display: flex;
+        align-items: center;
+        column-gap: 10rem;
+        margin-bottom: 10rem;
+      }
+
+      img {
+        width: 100%;
+        max-width: 79rem;
+        max-height: 63rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: $media-query-tablet) {
+          width: 50%;
+          margin-bottom: 0;
+        }
+      }
+
+      &-text {
+        h2 {
+          @include heading-two;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          @include body-text;
+          color: $color-dark-grey;
+          letter-spacing: 0.02rem;
+
+          @media only screen and (min-width: $media-query-tablet) {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .steps-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media only screen and (min-width: $media-query-tablet) {
+        flex-direction: row-reverse;
+        column-gap: 20rem;
+      }
+
+      .step-two {
+        margin-bottom: 5rem;
+
+        @media only screen and (min-width: $media-query-tablet) {
+          margin-bottom: 25rem;
+        }
+
+        img {
+          width: 100%;
+          max-width: 65rem;
+          max-height: 53rem;
+          margin-bottom: 2rem;
+
+          @media only screen and (min-width: $media-query-tablet) {
+            margin-bottom: 4rem;
+          }
+        }
+
+        &-text {
+
+          h2 {
+            @include heading-two;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            @include body-text;
+            color: $color-dark-grey;
+          }
+        }
+      }
+
+      .step-three {
+        img {
+          width: 100%;
+          max-width: 65rem;
+          max-height: 53rem;
+          margin-top: 2rem;
+
+          @media only screen and (min-width: $media-query-tablet) {
+            margin-top: 4rem;
+          }
+        }
+
+        &-text {
+          h2 {
+            @include heading-two;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            @include body-text;
+            color: $color-dark-grey;
+          }
+        }
+      }
+    }
+  }
+}

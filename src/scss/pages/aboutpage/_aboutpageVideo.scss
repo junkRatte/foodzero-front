@@ -1,0 +1,36 @@
+.aboutpage-video {
+  position: relative;
+  color: $color-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $color-very-dark-green;
+    opacity: 0.5;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h2 {
+      @include heading-one;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      @include body-text;
+    }
+  }
+}
