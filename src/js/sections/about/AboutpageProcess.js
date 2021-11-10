@@ -30,7 +30,11 @@ function AboutpageProcess() {
               <div className="step-two-text">
                 <h2>02.Pickled</h2>
                 <p>
-                  Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit Purus lorem<br/>id penatibus imperdiet.
+                  Lorem ipsum dolor sit amet,
+                  <br />
+                  consectetur adipiscing elit Purus lorem
+                  <br />
+                  id penatibus imperdiet.
                 </p>
               </div>
             </div>
@@ -38,13 +42,16 @@ function AboutpageProcess() {
               <div className="step-three-text">
                 <h2>03.Bake</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Purus lorem id penatibus imperdiet.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <br />
+                  Purus lorem id penatibus imperdiet.
                 </p>
               </div>
               <img src={BakeImage} />
             </div>
           </div>
         </div>
+        <img className="rosemary-image-two" src={RosemaryImage} />
       </div>
     </div>
   );

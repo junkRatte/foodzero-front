@@ -10,12 +10,24 @@
 
   .rosemary-image {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 
     @media only screen and (min-width: $media-query-laptop) {
       display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
+    }
+  }
+
+  .rosemary-image-two {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateY(180deg);
+
+    @media only screen and (min-width: $media-query-laptop) {
+      display: block;
     }
   }
 
@@ -99,7 +111,6 @@
         }
 
         &-text {
-
           h2 {
             @include heading-two;
             margin-bottom: 2rem;

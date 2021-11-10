@@ -1,9 +1,10 @@
 import React from 'react'
+import BlogpageHeader from '../sections/blog/BlogpageHeader'
 
 function Blogs() {
     return (
-        <div>
-            <h1>blogspage</h1>
+        <div className="blogpage">
+            <BlogpageHeader />
         </div>
     )
 }

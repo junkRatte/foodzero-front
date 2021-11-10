@@ -1,0 +1,31 @@
+.blogpage-header {
+  background-image: url(../../../images/blogpage-header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+
+  @media only screen and (min-width: $media-query-laptop-large) {
+    height: 100vh;
+  }
+
+  header {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    text-align: center;
+    padding: 15rem 0;
+
+    h1 {
+      @include heading-one;
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      @include body-text;
+    }
+  }
+}

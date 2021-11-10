@@ -5,7 +5,7 @@ function HomepageBlog() {
   return (
     <section className="homepage-blog">
       <div className="layout-container">
-        {BlogData.map((blog) => (
+        {BlogData.slice(0, 2).map((blog) => (
           <article className="blog-card">
             <div className="blog-card-image">
               <img src={blog.image} />
