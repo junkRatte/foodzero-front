@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BlogData } from "../../components/BlogData";
 
 function HomepageBlog() {
@@ -22,9 +23,9 @@ function HomepageBlog() {
             <div className="blog-card-text">
               <h3 className="blog-card-title">{blog.title}</h3>
               <p className="blog-card-teaser">{blog.teaser}</p>
-              <a href="#">
+              <Link to={`/blog/${blog.title}`}>
                 Read More <i class="fas fa-long-arrow-alt-right"></i>
-              </a>
+              </Link>
             </div>
           </article>
         ))}

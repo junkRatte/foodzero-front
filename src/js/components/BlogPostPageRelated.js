@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BlogData } from "../../components/BlogData";
+import { BlogData } from "./BlogData";
 
-function BlogpageBlogs() {
+function BlogPostPageRelated({ match }) {
   return (
-    <section className="blogpage-blogs">
+    <section className="blogpost-related">
+      <h4>Related Posts</h4>
       <div className="layout-container">
-        {BlogData.map((blog) => (
+        {BlogData.slice(0, 2).map((blog) => (
           <article className="blog-card">
             <div className="blog-card-image">
               <img src={blog.image} />
@@ -34,4 +35,4 @@ function BlogpageBlogs() {
   );
 }
 
-export default BlogpageBlogs;
+export default BlogPostPageRelated;
