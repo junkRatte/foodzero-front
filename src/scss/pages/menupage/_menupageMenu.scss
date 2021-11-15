@@ -70,6 +70,10 @@
           border-radius: 1rem;
         }
 
+        a {
+          color: $color-black;
+        }
+
         &-price {
           @include heading-four;
           text-align: right;
@@ -85,6 +89,7 @@
 
         &-teaser {
           @include body-text;
+          color: $color-dark-grey;
         }
       }
     }

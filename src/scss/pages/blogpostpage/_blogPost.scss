@@ -1,5 +1,5 @@
 .blogpost {
-  .blogpost-header {
+  &-header {
     @media only screen and (min-width: $media-query-laptop-large) {
       height: 100vh !important;
     }

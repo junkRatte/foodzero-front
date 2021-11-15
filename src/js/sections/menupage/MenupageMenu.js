@@ -5,6 +5,7 @@ import MenupageStartersImage from "../../../images/menupage-starters-image.png";
 import MenupageMainsImage from "../../../images/menupage-mains-image.png";
 import MenupageDrinksImage from "../../../images/menupage-drinks-image.png";
 import { MenuData } from "../../components/MenuData";
+import { Link } from "react-router-dom";
 
 function MenupageMenu() {
   return (
@@ -23,9 +24,11 @@ function MenupageMenu() {
                 .slice(0, 3)
                 .map((meal) => (
                   <div className="menu-item">
-                    <p className="menu-item-price">${meal.price}</p>
-                    <h3 className="menu-item-name">{meal.name}</h3>
-                    <p className="menu-item-teaser">{meal.teaser}</p>
+                    <Link to={`/meal/${meal.name}`}>
+                      <p className="menu-item-price">${meal.price}</p>
+                      <h3 className="menu-item-name">{meal.name}</h3>
+                      <p className="menu-item-teaser">{meal.teaser}</p>
+                    </Link>
                   </div>
                 ))}
             </div>
@@ -40,9 +43,11 @@ function MenupageMenu() {
                 .slice(0, 3)
                 .map((meal) => (
                   <div className="menu-item">
-                    <p className="menu-item-price">${meal.price}</p>
-                    <h3 className="menu-item-name">{meal.name}</h3>
-                    <p className="menu-item-teaser">{meal.teaser}</p>
+                    <Link to={`/meal/${meal.name}`}>
+                      <p className="menu-item-price">${meal.price}</p>
+                      <h3 className="menu-item-name">{meal.name}</h3>
+                      <p className="menu-item-teaser">{meal.teaser}</p>
+                    </Link>
                   </div>
                 ))}
             </div>
@@ -60,9 +65,11 @@ function MenupageMenu() {
                 .slice(0, 3)
                 .map((meal) => (
                   <div className="menu-item">
-                    <p className="menu-item-price">${meal.price}</p>
-                    <h3 className="menu-item-name">{meal.name}</h3>
-                    <p className="menu-item-teaser">{meal.teaser}</p>
+                    <Link to={`/meal/${meal.name}`}>
+                      <p className="menu-item-price">${meal.price}</p>
+                      <h3 className="menu-item-name">{meal.name}</h3>
+                      <p className="menu-item-teaser">{meal.teaser}</p>
+                    </Link>
                   </div>
                 ))}
             </div>

@@ -68,6 +68,7 @@
                 @include heading-four;
                 margin-bottom: 1rem;
                 text-align: right;
+                color: $color-black;
 
                 @media only screen and (min-width: $media-query-laptop) {
                     margin-bottom: 2rem;
@@ -79,6 +80,7 @@
                 border-top: .3rem dotted $color-black;
                 padding-top: 1rem;
                 margin-bottom: 1rem;
+                color: $color-black;
 
                 @media only screen and (min-width: $media-query-laptop) {
                     margin-bottom: 2rem;
@@ -87,6 +89,7 @@
 
             &-summary {
                 @include body-text;
+                color: $color-dark-grey;
             }
         }
     }

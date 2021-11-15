@@ -9,6 +9,7 @@ import Footer from "./js/components/Footer";
 import ScrollToTopButton from "./js/components/ScrollToTopButton";
 import BlogPostPage from "./js/components/BlogPostPage";
 import ScrollToTop from "./js/components/ScrollToTop";
+import MealDescriptionPage from "./js/components/MealDescriptionPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog/:title" exact component={BlogPostPage} />
+          <Route path="/meal/:name" exact component={MealDescriptionPage} />
         </Switch>
         <ScrollToTopButton />
         <Footer />

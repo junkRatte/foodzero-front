@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BlogData } from "./BlogData";
 
-function BlogPostPageRelated({ match }) {
+function BlogPostPageRelated() {
   return (
     <section className="blogpost-related">
       <h4>Related Posts</h4>
