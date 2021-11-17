@@ -18,6 +18,7 @@
 
 @import './scss/pages/menupage/menupageHeader';
 @import './scss/pages/menupage/menupageMenu';
+@import './scss/pages/menupage/menupageGrid';
 
 @import './scss/pages/contactpage/contactpageHeader';
 @import './scss/pages/contactpage/contactpageContact';
@@ -61,4 +62,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.active-filter {
+  border-bottom: .3rem solid $color-black !important;
 }

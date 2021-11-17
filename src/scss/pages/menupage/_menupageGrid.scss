@@ -1,0 +1,26 @@
+.menupage-grid {
+  padding-bottom: 10rem;
+
+  ul {
+    @include body-text;
+    max-width: 100rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 4rem auto;
+
+    li {
+      border-bottom: 0.3rem solid $color-white;
+      transition: $hover-transition;
+
+      &:hover {
+        cursor: pointer;
+        border-color: $color-black;
+      }
+    }
+  }
+
+  img {
+    width: 50%;
+  }
+}
