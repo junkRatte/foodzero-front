@@ -2,6 +2,9 @@ import WhiteCodFillet from "../../images/whitecodfillet-image.png";
 import RosemarySteak from "../../images/rosemarysteak-image.png";
 import PumpkinSoup from "../../images/pumpkinsoup-image.png";
 import NaturalWine from "../../images/naturalwine-image.png";
+import FriedPrawn from "../../images/fried-prawn-image.png";
+import BraisedFish from "../../images/braised-fish-image.png";
+import Pancakes from "../../images/pancakes-image.png";
 
 export const filterTypesData = [
   {
@@ -11,9 +14,9 @@ export const filterTypesData = [
   },
 
   {
-    name: "Steak With Rosemary Butter",
-    type: "Lunch",
-    image: RosemarySteak,
+    name: "Natural Wine",
+    type: "Drinks",
+    image: NaturalWine,
   },
 
   {
@@ -23,44 +26,26 @@ export const filterTypesData = [
   },
 
   {
-    name: "Natural Wine",
-    type: "Drinks",
-    image: NaturalWine,
+    name: "Steak With Rosemary Butter",
+    type: "Lunch",
+    image: RosemarySteak,
   },
 
   {
-    name: "Grilled Okra and Tomatoes",
-    type: "Starter",
-    image: NaturalWine,
+    name: "Braised Sliced Abalone, Fish Maw with Premium Seafood",
+    type: "Dinner",
+    image: BraisedFish,
   },
 
   {
-    name: "Cucumber Salad",
+    name: "Pan Fried Live Prawn with Superior Soy Sauce",
     type: "Starter",
-    image: NaturalWine,
+    image: FriedPrawn,
   },
 
   {
     name: "Basil Pancakes",
-    type: "Starters",
-    image: NaturalWine,
-  },
-
-  {
-    name: "Steak with Grilled Kimchi",
-    type: "Mains",
-    image: NaturalWine,
-  },
-
-  {
-    name: "Wine Pairing",
-    type: "Drinks",
-    image: NaturalWine,
-  },
-
-  {
-    name: "Whisky Flyer",
-    type: "Drinks",
-    image: NaturalWine,
+    type: "Sweets",
+    image: Pancakes,
   },
 ];

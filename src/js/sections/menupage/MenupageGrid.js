@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { filterTypesData } from "../../components/FilterTypesData";
+import { Link } from "react-router-dom";
 
 function MenupageGrid() {
   const [items, setItems] = useState(filterTypesData);
@@ -14,7 +15,7 @@ function MenupageGrid() {
   return (
     <section className="menupage-grid">
       <div className="layout-container">
-        <ul>
+        <ul className="filter-list">
           <li onClick={() => setItems(filterTypesData)}>All</li>
           <li onClick={() => filterItems("Starter")}>Starter</li>
           <li onClick={() => filterItems("Lunch")}>Lunch</li>
@@ -23,27 +24,40 @@ function MenupageGrid() {
           <li onClick={() => filterItems("Sweets")}>Sweets</li>
           <li onClick={() => filterItems("Fruits")}>Fruits</li>
         </ul>
-        <div className="images-grid">
-          {/* <div className="images-grid-row-1">
-            {items.slice(0, 2).map((type) => (
-              <img src={type.image} />
+        <div className="grid-images">
+          <div className="grid-images-row-1">
+            {items.slice(0, 2).map((item) => (
+              <Link to={`/meal/${item.name}`} className="image">
+                <img src={item.image} />
+                <div className="image-text">
+                  <h4>{item.name}</h4>
+                  <p>{item.type}</p>
+                </div>
+              </Link>
             ))}
           </div>
-          <div className="images-grid-row-2">
-            {items.slice(2, 4).map((type) => (
-              <img src={type.image} />
+          <div className="grid-images-row-2">
+            {items.slice(2, 4).map((item) => (
+              <Link to={`/meal/${item.name}`} className="image">
+                <img src={item.image} />
+                <div className="image-text">
+                  <h4>{item.name}</h4>
+                  <p>{item.type}</p>
+                </div>
+              </Link>
             ))}
           </div>
-          <div className="images-grid-row-3">
-            {items.slice(4, 6).map((type) => (
-              <img src={type.image} />
+          <div className="grid-images-row-3">
+            {items.slice(4, 6).map((item) => (
+              <Link to={`/meal/${item.name}`} className="image">
+                <img src={item.image} />
+                <div className="image-text">
+                  <h4>{item.name}</h4>
+                  <p>{item.type}</p>
+                </div>
+              </Link>
             ))}
-          </div> */}
-          {items.map((item) => (
-            <div>
-              <img src={item.image} />
-            </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
