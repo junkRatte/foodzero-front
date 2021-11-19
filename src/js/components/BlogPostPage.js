@@ -2,11 +2,20 @@ import React from "react";
 import { BlogData } from "./BlogData";
 import BlogPostPageRelated from "./BlogPostPageRelated";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+import { fadeAnimation, transition } from "../components/FramerAnimations";
 
 function BlogPostPage({ match }) {
   const blogTitle = match.params.title;
   return (
-    <>
+    <motion.div
+      className="homepage"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={fadeAnimation}
+      transition={transition}
+    >
       {BlogData.filter((blog) => blog.title == blogTitle).map((blog) => (
         <div className="blogpost">
           <div
@@ -67,7 +76,7 @@ function BlogPostPage({ match }) {
           <BlogPostPageRelated />
         </div>
       ))}
-    </>
+    </motion.div>
   );
 }
 

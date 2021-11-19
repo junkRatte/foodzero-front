@@ -7,10 +7,19 @@ import HomepageBlog from "../sections/homepage/HomepageBlog";
 import ReservationForm from "../components/ReservationForm";
 import HomepageCategories from "../sections/homepage/HomepageCategories";
 import HomepageQuotes from "../sections/homepage/HomepageQuotes";
+import { motion } from "framer-motion";
+import { fadeAnimation, transition } from "../components/FramerAnimations";
 
 function Home() {
   return (
-    <div className="homepage">
+    <motion.div
+      className="homepage"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={fadeAnimation}
+      transition={transition}
+    >
       <HomepageHeader />
       <HomepageMenu />
       <HomepageCook />
@@ -19,7 +28,7 @@ function Home() {
       <ReservationForm />
       <HomepageCategories />
       <HomepageQuotes />
-    </div>
+    </motion.div>
   );
 }
 

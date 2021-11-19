@@ -4,16 +4,18 @@ import AboutpageHeader from "../sections/about/AboutpageHeader";
 import AboutpageProcess from "../sections/about/AboutpageProcess";
 import AboutpageStory from "../sections/about/AboutpageStory";
 import AboutpageVideo from "../sections/about/AboutpageVideo";
+import { motion } from "framer-motion";
+import { fadeAnimation, transition } from "../components/FramerAnimations";
 
 function About() {
   return (
-    <div className="aboutpage">
+    <motion.div className="homepage" initial="out" animate="in" exit="out" variants={fadeAnimation} transition={transition}>
       <AboutpageHeader />
       <AboutpageStory />
       <AboutpageVideo />
       <AboutpageProcess />
       <ReservationForm />
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,11 +1,19 @@
 import React from "react";
 import { MenuData } from "./MenuData";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+import { fadeAnimation, transition } from "./FramerAnimations";
 
 function MealDescriptionPage({ match }) {
   const mealName = match.params.name;
   return (
-    <>
+    <motion.div
+      className="homepage"
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={fadeAnimation}
+      transition={transition}>
       {MenuData.filter((meal) => meal.name == mealName).map((meal) => (
         <div className="mealdescription">
           <div
@@ -48,7 +56,7 @@ function MealDescriptionPage({ match }) {
           </section>
         </div>
       ))}
-    </>
+    </motion.div>
   );
 }
 
