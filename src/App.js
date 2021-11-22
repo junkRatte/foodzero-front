@@ -19,7 +19,7 @@ function App() {
         <ScrollToTop />
         <AnimatePresence exitBeforeEnter>
           <Switch>
-            <Route path="/https://junkratte.github.io/foodzero-front/" exact component={Home} />
+            <Route path="https://junkratte.github.io/foodzero-front/" exact component={Home} />
             <Route path="/menu" component={Menu} />
             <Route path="/blogs" component={Blogs} />
             <Route path="/about" component={About} />
