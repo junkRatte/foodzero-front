@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/foodzero-front/static/css/main.0b880372.chunk.css",
-    "main.js": "/foodzero-front/static/js/main.84e452dc.chunk.js",
-    "main.js.map": "/foodzero-front/static/js/main.84e452dc.chunk.js.map",
+    "main.js": "/foodzero-front/static/js/main.8c604c73.chunk.js",
+    "main.js.map": "/foodzero-front/static/js/main.8c604c73.chunk.js.map",
     "runtime-main.js": "/foodzero-front/static/js/runtime-main.58f7b8a9.js",
     "runtime-main.js.map": "/foodzero-front/static/js/runtime-main.58f7b8a9.js.map",
     "static/js/2.4b0757ba.chunk.js": "/foodzero-front/static/js/2.4b0757ba.chunk.js",
@@ -63,6 +63,6 @@
     "static/js/runtime-main.58f7b8a9.js",
     "static/js/2.4b0757ba.chunk.js",
     "static/css/main.0b880372.chunk.css",
-    "static/js/main.84e452dc.chunk.js"
+    "static/js/main.8c604c73.chunk.js"
   ]
 }
