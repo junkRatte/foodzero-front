@@ -20,10 +20,10 @@ function App() {
         <AnimatePresence exitBeforeEnter>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/menu" component={Menu} />
-            <Route path="/blogs" component={Blogs} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
+            <Route path="/menu" exact component={Menu} />
+            <Route path="/blogs" exact component={Blogs} />
+            <Route path="/about" exact component={About} />
+            <Route path="/contact" exact component={Contact} />
             <Route path="/blog/:title" exact component={BlogPostPage} />
             <Route path="/meal/:name" exact component={MealDescriptionPage} />
           </Switch>
